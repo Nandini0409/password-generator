@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1> Password Generator</h1>
+
+    <div class="box">
+
+        <p>Enter the length of the password:</p>
+
+        <input type="text" autocomplete="off" id="pswLength">
+
+        <p>Include numbers and symbols in your password?</p>
+
+            <div class="option">
+                <p>Numbers</p>
+                <input type="checkbox" id="numberTgl" class="toggleBtn">
+            </div>
+            <div class="option">
+                <p>Symbols</p>
+                <input type="checkbox" id="symbolTgl" class="toggleBtn">
+            </div>
+        
+        <button id="generateBtn" class="btn">Generate Password </button>
+
+        <div class="result">
+            <div class="btn psw" id="password_1">
+                <button class="copyBtn"><img src="/copy.png" alt="" width="16px"></button>
+            </div>
+            <div class="btn psw" id="password_2">
+                <button class="copyBtn"><img src="/copy.png" alt="" width="16px"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

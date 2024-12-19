@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(38, 48, 82);
+    font-family: "Outfit", sans-serif;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 40px;
+    margin: auto;
+    margin-top: 10vh;
+    letter-spacing: -1px;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+.box{
+    width: 650px;
+    border: 1px solid rgb(207, 206, 206);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 34px;
+    gap: 30px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#pswLength {
+    width: 75%;
+    font-size: 11px;
+    border: 1px solid rgb(207, 206, 206);
+    padding: 6px 12px;
+    text-align: left;
+}
+
+.option {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn {
+    color: rgb(255, 253, 253);
+    font-size: 14px;
+    padding: 6px 12px;
+    border: 1px solid rgb(207, 206, 206);
+}
+
+.result {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    width: 75%;
+}
+
+.psw {
+    position: relative;
+    visibility: hidden;
+    width: 100%;
+    height: 30px;
+    color: rgb(211, 219, 219);
+    font-size: 11px;
+    border: 1px solid rgb(207, 206, 206);
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    overflow: hidden;
+    /* Hide any overflowing content */
+    text-overflow: ellipsis;
+    /* Add ellipsis (...) to indicate truncated text */
+}
+
+.borderRadius {
+    border-radius: 4px;
+}
+
+.copyBtn {
+    position: absolute;
+    left: 94%;
+    top: 4%;
+    border: none;
+    border-left: 1px solid rgb(211, 219, 219);
+    padding: 4px;
+}
+
+@media only screen and (max-width: 650px) {
+    .box{
+        width: 90%;
+        font-size: 14px;
+        padding: 20px;
+    }
+    .copyBtn{
+        left: 88%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .box{
+        border: none;
+    }
+    #pswLength{
+        width: 100%;
+    }
+    .result{
+        width: 100%;
+    }
+    h1{
+        font-size: 28px;
+        margin: auto;
+        margin-top: 34px;
+    }
+}
